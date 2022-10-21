@@ -1,0 +1,246 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 11.14
+-- Dumped by pg_dump version 13.3
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Data for Name: hibernate_sequences; Type: TABLE DATA; Schema: saphanadev; Owner: utildb
+--
+
+INSERT INTO saphanadev.hibernate_sequences VALUES ('default', 3);
+
+
+--
+-- Data for Name: login_user; Type: TABLE DATA; Schema: saphanadev; Owner: utildb
+--
+
+INSERT INTO saphanadev.login_user VALUES ('sapdemo', 'sapdemo');
+
+
+--
+-- Data for Name: tbl_systemtype_master; Type: TABLE DATA; Schema: saphanadev; Owner: utildb
+--
+
+INSERT INTO saphanadev.tbl_systemtype_master VALUES (2, 'ECC', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143', NULL);
+INSERT INTO saphanadev.tbl_systemtype_master VALUES (1, 'SAPS/4', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143', NULL);
+INSERT INTO saphanadev.tbl_systemtype_master VALUES (3, 'HANA', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143', NULL);
+
+
+--
+-- Data for Name: tbl_monitor_view; Type: TABLE DATA; Schema: saphanadev; Owner: utildb
+--
+
+
+
+--
+-- Data for Name: tbl_report_configuration; Type: TABLE DATA; Schema: saphanadev; Owner: utildb
+--
+
+INSERT INTO saphanadev.tbl_report_configuration VALUES (305, 'Report Group8', 'The Compact Journal', '{"companyCode":null,"fiscalYear":null,"ledger":null,"currencyType":null}');
+INSERT INTO saphanadev.tbl_report_configuration VALUES (1, 'Report Group8', 'General Ledger Accounting', '{"companyCode":"12345678","fiscalYear":"2-3-2002","ledger":"value","currencyType":"indian rupees"}');
+INSERT INTO saphanadev.tbl_report_configuration VALUES (2, 'Report Group8', 'Asset Accounting', '{"companyCodefrom":null,"companyCodeto":null,"ReportDate":null,"DepreciationArea":null,"Sortvariant":null}');
+INSERT INTO saphanadev.tbl_report_configuration VALUES (306, 'Report Group8', 'General Ledger Line Items', '{"companyCode":null,"fiscalYear":null,"ledger":null,"currencyType":null}');
+INSERT INTO saphanadev.tbl_report_configuration VALUES (307, 'Report Group4', 'General Ledger Accounting', '{"companyCode":"1234","fiscalYear":null,"ledger":null,"currencyType":null}');
+INSERT INTO saphanadev.tbl_report_configuration VALUES (202, 'Report Group8', 'Vendor Purchases', '{"companyCode":null,"fiscalYear":null,"ledger":null,"currencyType":null}');
+INSERT INTO saphanadev.tbl_report_configuration VALUES (4, 'Report Group1', 'General Ledger Accounting', '{"companyCode":"4321","fiscalYear":"08-08-2022","ledger":"ledger value","currencyType":"U.S. Dollar"}');
+INSERT INTO saphanadev.tbl_report_configuration VALUES (352, 'Report Group1', 'Asset Accounting', '{"companyCodefrom":"1234","companyCodeto":"54321","ReportDate":"12-12-2022","DepreciationArea":"area","Sortvariant":"value"}');
+INSERT INTO saphanadev.tbl_report_configuration VALUES (303, 'Report Group8', 'Customer Sales', '{"companyCode":null,"fiscalYear":null,"ledger":null,"currencyType":null}');
+INSERT INTO saphanadev.tbl_report_configuration VALUES (403, 'Report Group5', 'General Ledger Accounting', '{"companyCode":null,"fiscalYear":null,"ledger":null,"currencyType":null}');
+INSERT INTO saphanadev.tbl_report_configuration VALUES (3, 'Report Group5', 'Vendor Purchases', '{"companyCode":"98765","fiscalYear":"09-08-2022","ledger":"ledger value","currencyType":"Indian rupees"}');
+INSERT INTO saphanadev.tbl_report_configuration VALUES (402, 'Report Group5', 'Asset Accounting', '{"companyCodefrom":null,"companyCodeto":null,"ReportDate":null,"DepreciationArea":null,"Sortvariant":null}');
+INSERT INTO saphanadev.tbl_report_configuration VALUES (252, 'Report Group8', 'Vendor Open Line Items', '{"companyCode":null,"fiscalYear":null,"ledger":null,"currencyType":null}');
+INSERT INTO saphanadev.tbl_report_configuration VALUES (304, 'Report Group8', 'Vendor Open Line Items other', '{"companyCode":null,"fiscalYear":null,"ledger":null,"currencyType":null}');
+
+
+--
+-- Data for Name: tbl_report_master; Type: TABLE DATA; Schema: saphanadev; Owner: utildb
+--
+
+INSERT INTO saphanadev.tbl_report_master VALUES (4, NULL, NULL, 'ReportName2', 'General Ledger Accounting', '{"fiscalYear":"12-12-2022","ledger":"ledger value","currencyType":"dollar"}');
+INSERT INTO saphanadev.tbl_report_master VALUES (76, NULL, NULL, 'tt', 'General Ledger Accounting', '{"fiscalYear":"null","ledger":"tt","currencyType":"null"}');
+INSERT INTO saphanadev.tbl_report_master VALUES (8, NULL, NULL, 'ReportName', 'General Ledger Accounting', '{"fiscalYear":"12-12-12","ledger":"ledger","currencyType":"Indian Rupees"}');
+INSERT INTO saphanadev.tbl_report_master VALUES (9, NULL, NULL, 'ReportName', 'Vendor Purchases', '{"Vendor account ":"1234","Purchases":"nish","fiscal year":"23-23-21"}');
+INSERT INTO saphanadev.tbl_report_master VALUES (84, NULL, NULL, 'jj', 'General Ledger Accounting', '{"fiscalYear":"j","ledger":"null","currencyType":"null"}');
+INSERT INTO saphanadev.tbl_report_master VALUES (19, NULL, NULL, 're', 'Vendor Open Line Items', '{"Company code":"d"," vendor account":"w"}');
+INSERT INTO saphanadev.tbl_report_master VALUES (39, NULL, NULL, 'reporttest', 'General Ledger Accounting', '{"fiscalYear":"d","ledger":"e","currencyType":"2"}');
+INSERT INTO saphanadev.tbl_report_master VALUES (41, NULL, NULL, 'ReportName1', 'General Ledger Accounting', '{"fiscalYear":"26-9-2021","ledger":"nulla","currencyType":"null"}');
+INSERT INTO saphanadev.tbl_report_master VALUES (65, NULL, NULL, 'rr', 'General Ledger Accounting', '{"fiscalYear":"d","ledger":"null","currencyType":"null"}');
+INSERT INTO saphanadev.tbl_report_master VALUES (66, NULL, NULL, 'rr', 'Vendor Open Line Items', '{"Company code":"m"," vendor account":"null"}');
+
+
+--
+-- Data for Name: tbl_report_variant_master; Type: TABLE DATA; Schema: saphanadev; Owner: utildb
+--
+
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (1, 1, 'Company code', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (2, 1, 'Fiscal Year', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (3, 1, 'Ledger', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (4, 1, 'Currency Type', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (5, 2, 'Company code', 'textbox', '2022-06-02 19:10:25', 'shmukka', '2022-06-02 19:10:25', 'shmukka');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (6, 2, 'Report Date', 'textbox', '2022-06-02 19:10:25', 'shmukka', '2022-06-02 19:10:25', 'shmukka');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (7, 2, 'Depreciation Area', 'textbox', '2022-06-02 19:10:25', 'shmukka', '2022-06-02 19:10:25', 'shmukka');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (8, 2, 'Sort Varaint', 'textbox', '2022-06-02 19:10:25', 'shmukka', '2022-06-02 19:10:25', 'shmukka');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (9, 2, 'to', 'textbox', '2022-06-02 19:10:25', 'shmukka', '2022-06-02 19:10:25', 'shmukka');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (10, 3, 'Company code', 'textbox', '2022-06-02 19:10:25', 'shmukka', '2022-06-02 19:10:25', 'shmukka');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (11, 3, 'Vendor Account', 'textbox', '2022-06-02 19:10:25', 'shmukka', '2022-06-02 19:10:25', 'shmukka');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (12, 3, 'Fiscal Year', 'textbox', '2022-06-02 19:10:25', 'shmukka', '2022-06-02 19:10:25', 'shmukka');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (13, 3, 'to', 'textbox', '2022-06-02 19:10:25', 'shmukka', '2022-06-02 19:10:25', 'shmukka');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (14, 4, 'Company code', 'textbox', '2022-06-02 19:10:25', 'shmukka', '2022-06-02 19:10:25', 'shmukka');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (15, 4, 'Vendor Account', 'textbox', '2022-06-02 19:10:25', 'shmukka', '2022-06-02 19:10:25', 'shmukka');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (16, 4, 'to', 'textbox', '2022-06-02 19:10:25', 'shmukka', '2022-06-02 19:10:25', 'shmukka');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (17, 5, 'Company code', 'textbox', '2022-06-02 19:10:25', 'shmukka', '2022-06-02 19:10:25', 'shmukka');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (18, 5, 'Customer account', 'textbox', '2022-06-02 19:10:25', 'shmukka', '2022-06-02 19:10:25', 'shmukka');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (19, 5, 'Fiscal Year', 'textbox', '2022-06-02 19:10:25', 'shmukka', '2022-06-02 19:10:25', 'shmukka');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (20, 6, 'Company code', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (21, 6, 'Customer Account', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (22, 7, 'Company code', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (23, 7, 'Document Number', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (24, 7, 'Fiscal Year', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (25, 8, 'Company code', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (26, 8, 'G/L Account', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (27, 9, 'Company code', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (28, 9, 'Fiscal Year', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (29, 9, 'Ledger', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (30, 10, 'Company code', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (31, 10, 'Currency Type', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (32, 10, 'Ledger', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (33, 10, 'Financial Statement Version', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (34, 10, 'Reporting Year', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (35, 10, 'Reporting Periods', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (36, 10, 'Comparision Year', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (37, 10, 'Comparision Periods', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (38, 10, 'to', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (39, 11, 'Controlling Area', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (40, 11, 'Fiscal Year', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (41, 11, 'From Period', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (42, 11, 'To Period', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (43, 11, 'Plan Version', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (44, 11, 'Cost Center', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (45, 11, 'to', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (46, 12, 'Controlling Area', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (47, 12, 'Fiscal Year', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (48, 12, 'From Period', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (49, 12, 'To Period', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (50, 12, 'Plan Version', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (51, 12, 'Order Number', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+INSERT INTO saphanadev.tbl_report_variant_master VALUES (52, 12, 'to', 'textbox', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143');
+
+
+--
+-- Data for Name: tbl_reportgroup_view; Type: TABLE DATA; Schema: saphanadev; Owner: utildb
+--
+
+INSERT INTO saphanadev.tbl_reportgroup_view VALUES (2, NULL, '2022-09-26 07:23:31.282', NULL, '2022-09-26 07:23:31.282', 'ReportName', 'General Ledger Accounting,Vendor Purchases');
+INSERT INTO saphanadev.tbl_reportgroup_view VALUES (1, NULL, '2022-09-26 06:11:31.738', NULL, '2022-09-26 06:11:31.738', 'ReportName1', 'General Ledger Accounting');
+
+
+--
+-- Data for Name: tbl_reportmaster_setup; Type: TABLE DATA; Schema: saphanadev; Owner: utildb
+--
+
+INSERT INTO saphanadev.tbl_reportmaster_setup VALUES (1, 'General Ledger Accounting', 'fiscalYear,ledger,currencyType');
+INSERT INTO saphanadev.tbl_reportmaster_setup VALUES (3, 'Vendor Purchases', 'Vendor account ,Purchases,fiscal year');
+INSERT INTO saphanadev.tbl_reportmaster_setup VALUES (4, 'Vendor Open Line Items', 'Company code, vendor account');
+INSERT INTO saphanadev.tbl_reportmaster_setup VALUES (5, 'Customer Sales', 'Company code,Customer account,fiscal year');
+INSERT INTO saphanadev.tbl_reportmaster_setup VALUES (6, 'Customer Open Line Items', 'Company code,Customer account');
+INSERT INTO saphanadev.tbl_reportmaster_setup VALUES (7, 'Customer Recurring Document Report', 'Company code,Customer account,fiscal year');
+INSERT INTO saphanadev.tbl_reportmaster_setup VALUES (8, 'General Ledger Line Items', 'Company code,G/L account');
+INSERT INTO saphanadev.tbl_reportmaster_setup VALUES (9, 'The Compact Journal', 'Company code,Customer account,fiscal year');
+INSERT INTO saphanadev.tbl_reportmaster_setup VALUES (10, 'Financial Statement', 'Company code,Currency type,ledger,financial statement version,reporting year, reporting periods,comparison tear,comparison periods');
+INSERT INTO saphanadev.tbl_reportmaster_setup VALUES (11, 'Cost Center:Actual/Plan/Variance', 'Controlling area,fiscal year,to period,plan version,cost center
+');
+INSERT INTO saphanadev.tbl_reportmaster_setup VALUES (2, 'Asset Accounting', 'companyCode,ReportDate,DepreciationArea,Sortvariant');
+INSERT INTO saphanadev.tbl_reportmaster_setup VALUES (12, 'Orders/Actual/Plan/Variance', 'Controlling area,fiscal year,from year,to period,plan version,Order number
+');
+
+
+--
+-- Data for Name: tbl_serverconfiguration_view; Type: TABLE DATA; Schema: saphanadev; Owner: utildb
+--
+
+INSERT INTO saphanadev.tbl_serverconfiguration_view VALUES (2, '172.8.112.144', 'PRD', '00', 'R/H/194.117.106.130/S/3297/H/', '866', 'microID', 'Pass@123', '2022-06-02 19:10:25', '2022-07-21 17:19:49', 'Failure', '2022-06-02 19:10:25', 'ss143', '2022-06-02 19:10:25', 'ss143', 1, 0);
+INSERT INTO saphanadev.tbl_serverconfiguration_view VALUES (103, '12.23.34', 'PRD', '00', NULL, '6789', 'test', 'test', NULL, '2022-07-27 16:08:21', 'Failure', NULL, NULL, NULL, NULL, 3, 0);
+INSERT INTO saphanadev.tbl_serverconfiguration_view VALUES (1, '10.8.115.123', 'DEV', '10', 'H/saprouter/H/194.117.106.130/S/3297/H/', '1002', 'demo', 'demo', NULL, '2022-08-25 07:03:18', 'Failure', NULL, NULL, NULL, NULL, 2, 0);
+INSERT INTO saphanadev.tbl_serverconfiguration_view VALUES (52, '11.2.333.444', 'DEV', '11', 'R/H/194.117.106.130/S/3297/H/', '1002', 'test', 'test', NULL, '2022-08-25 07:03:23', 'Failure', NULL, NULL, NULL, NULL, 1, 0);
+INSERT INTO saphanadev.tbl_serverconfiguration_view VALUES (502, '10.12.144', 'DEV', '1111', NULL, '800', 'demo', '1234', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0);
+
+
+--
+-- Data for Name: tbl_visualize_view; Type: TABLE DATA; Schema: saphanadev; Owner: utildb
+--
+
+
+
+--
+-- Name: a; Type: SEQUENCE SET; Schema: saphanadev; Owner: utildb
+--
+
+SELECT pg_catalog.setval('saphanadev.a', 551, true);
+
+
+--
+-- Name: auto_gen; Type: SEQUENCE SET; Schema: saphanadev; Owner: utildb
+--
+
+SELECT pg_catalog.setval('saphanadev.auto_gen', 8, true);
+
+
+--
+-- Name: hibernate_sequence; Type: SEQUENCE SET; Schema: saphanadev; Owner: utildb
+--
+
+SELECT pg_catalog.setval('saphanadev.hibernate_sequence', 1, false);
+
+
+--
+-- Name: my_entity_seq; Type: SEQUENCE SET; Schema: saphanadev; Owner: utildb
+--
+
+SELECT pg_catalog.setval('saphanadev.my_entity_seq', 451, true);
+
+
+--
+-- Name: tbl_report_configuration_id_seq; Type: SEQUENCE SET; Schema: saphanadev; Owner: utildb
+--
+
+SELECT pg_catalog.setval('saphanadev.tbl_report_configuration_id_seq', 3, true);
+
+
+--
+-- Name: tbl_report_master_reportid_seq; Type: SEQUENCE SET; Schema: saphanadev; Owner: utildb
+--
+
+SELECT pg_catalog.setval('saphanadev.tbl_report_master_reportid_seq', 90, true);
+
+
+--
+-- Name: tbl_reportgroup_view_reportgroupid_seq; Type: SEQUENCE SET; Schema: saphanadev; Owner: utildb
+--
+
+SELECT pg_catalog.setval('saphanadev.tbl_reportgroup_view_reportgroupid_seq', 16, true);
+
+
+--
+-- Name: tbl_reportmaster_setup_id_seq; Type: SEQUENCE SET; Schema: saphanadev; Owner: utildb
+--
+
+SELECT pg_catalog.setval('saphanadev.tbl_reportmaster_setup_id_seq', 1, false);
+
+
+--
+-- PostgreSQL database dump complete
+--
+
